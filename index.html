@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@200;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                yeallow: '#FECC02',
+                wo_black:'#131313',
+                gray:'#4E4E4E'
+              },
+              fontFamily:{
+                bebs:["Bebas Neue","cursive"],
+                mont:["Montserrat",'sans-serif'],
+              },
+              backgroundImage: {
+                banner: "url('/img/hero.png')",
+                
+                }
+            }
+          }
+        }
+      </script>
+      <!-- //font-family: 'Bebas Neue', cursive;
+      font-family: 'Montserrat', sans-serif; -->
+      <link rel="stylesheet" href="/css/style.css">
+      
+    <title>tailwind website</title>
+</head>
+<body>
+    <nav class="flex  justify-between items-center px-6 md:px-24 lg:px-32 font-bebs bg-orange-400 md:bg-emerald-400 p-4 absolute w-full">
+        <h1 class="text-2xl">Jhaka Naka Production</h1>
+        <ul class=" text-lg flex gap-24">
+            <li>About Us</li>
+            <li>Movies</li>
+            <li>Services</li>
+        </ul>
+    </nav>
+
+    
+</body>
+<main>
+    <section class="bg-banner h-screen pt-20 flex items-center hero-bg ">
+       <div class="px-6 md:px-32 font-bebs leading-10">
+        <p class="text-xl" >Movie production studio</p>
+        <h1 class="text-7xl ">Films MAde to <br> Perfection</h1>
+        <p class="font-mont">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Ut  elit tellus, 
+            luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            <Button>Discover More</Button>
+       </div>
+    </section>
+</main>
+</html>
